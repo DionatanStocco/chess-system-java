@@ -24,7 +24,7 @@ public class Program {
 				UI.clearScreen();
 				UI.printMatch(chessMatch, captured);
 				System.out.println();
-				System.out.print("Soruce: ");
+				System.out.print("Source: ");
 				ChessPosition source = UI.readChessPosition(sc);
 
 				boolean[][] possibleMoves = chessMatch.possibleMoves(source);
@@ -42,7 +42,7 @@ public class Program {
 				}
 				
 				if(chessMatch.getPromoted() != null) {
-					System.out.println("Enter piece for promotion (B/N/R/Q): ");
+					System.out.print("Enter piece for promotion (B/N/R/Q): ");
 					String type = sc.nextLine();
 					chessMatch.replacePromotedPiece(type);
 				}
